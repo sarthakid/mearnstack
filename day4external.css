@@ -1,0 +1,28 @@
+        p
+        {
+            color: brown;
+            background-color: burlywood;
+            font-size: larger;
+            font-family:cursive;
+            letter-spacing: 1px;
+            text-align: center;
+            text-decoration:solid;
+            text-transform:uppercase;
+            border-color:black ;
+            text-align: justify;
+        }
+
+        h3{
+            color: cyan;
+            background-color: green;
+            text-decoration: underline;
+            font-size: medium;
+            font-family: cursive;
+            text-align: center;
+        }
+
+        span{
+            text-align: center;
+            color: deeppink;
+            background-color: darkslateblue;
+        }
