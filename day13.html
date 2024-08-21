@@ -1,1 +1,78 @@
-CSS3 transition and animation 16-7-24
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #d1
+        {
+            width: 500px;
+            height: 500px;
+            border: 20px solid black;
+            border-radius: 70px;
+            margin-top: 110px;
+            margin-left: 500px;
+
+        }
+
+        #d2
+        {
+            width: 30%;
+            border-width: 50px solid black;
+            margin: 50px;
+            border-image: url("D:\gokarni\drawings\IMG_20200507_185507.jpg") 50 round;
+        }
+        img 
+        {    
+            margin-left: 100px;
+            -webkit-transition: width 2s,height 4s, box-shadow 7s, -webkit-transform 5s;
+
+        }
+        img:hover
+        {
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 0px 10px 20px black;
+            -webkit-transform: rotate(2000deg);
+        }
+        #i2
+        {
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="d1">
+
+    </div>    
+
+    <div id="d2">
+       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam beatae amet ea, odit fugiat placeat dolore ipsam atque sit sequi incidunt consequuntur, nesciunt veritatis voluptates qui corrupti corporis libero officia!
+       </p>
+    </div>
+
+    <h1>shadow text</h1><hr>
+
+    <div id="d3">
+        fix box shadow
+    </div>
+
+    <div id="d4">
+        fix box shadow
+    </div>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure impedit saepe vero et ipsa quibusdam vitae libero? Molestias quasi saepe odio debitis voluptatum eaque ratione quia recusandae. Beatae, sapiente aut!
+    </p>
+
+    <img src="D:\gokarni\drawings\IMG_20200507_185507.jpg" id="1">
+
+    <div id="i2">
+    <p>welcome to TKA</p>
+    </div>
+</body>
+</html>
