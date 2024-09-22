@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function focus1()
+        {
+            err.innerHTML = "<span style = 'color:red'>Enter user name</span>"
+        }
+
+        function blur1()
+        {
+            err.innerHTML = "<span style = 'color:red'>Enter email id</span>" 
+        }
+
+        function focus1(id)
+            {
+                if (id == "uname")
+                 {
+                err.innerHTML = "enter uname"
+                 }
+                
+                else
+                 {
+                    err1.innerHTML = "enter email id"
+                 }
+            }
+                
+
+        function blur1(id)
+            {
+                if (id == "uname")
+                var pattern = /^( [A-Z]{1,1} )+( [a-z]{3,10} )$/
+                var u = document.getElementById("uname").value;
+                    if(u.match(pattern))
+                    {
+                        err.innerHTML = "<img src ='C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150704.png'>";
+                    }
+                else
+                {
+                    err.innerHTML="<img src = 'C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150749.png'">;
+                    f1.uname.value=""
+                    f1.uname.focus()
+                   
+                }
+            }    
+
+    </script>
+</head>
+<body>
+    
+
+    <form id="f1">
+        <table>
+            <tr> 
+               <td>username</td>
+               <td> <input type="text" name="uname" id="uname" onfocus="focus1(this.id)" onblur="blur1(this.id)"></td>
+               <td id="err"></td>
+            </tr>
+
+
+            <tr> 
+                <td>email id</td>
+                <td> <input type="email" name="email" id="email" onfocus="focus1(this.id)" onblur="blur1(this.id)"></td>
+                <td id="err1"></td>
+             </tr>
+
+
+             <tr> 
+                <td>password</td>
+                <td> <input type="password" name="password"></td>
+             </tr>
+
+
+             <tr> 
+                <td>confirm password</td>
+                <td> <input type="password" name="confirm password"></td>
+             </tr>
+
+        </table>
+    </form>
+
+
+</body>
+</html>
