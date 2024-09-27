@@ -6,54 +6,68 @@
     <title>Document</title>
     <script>
 
-        function focus1()
-        {
-            err.innerHTML = "<span style = 'color:red'>Enter user name</span>"
-        }
-
-        function blur1()
-        {
-            err.innerHTML = "<span style = 'color:red'>Enter email id</span>" 
-        }
-
-        function focus1(id)
-            {
-                if (id == "uname")
-                 {
-                err.innerHTML = "enter uname"
-                 }
+        
+        // function focus1(id)
+        //     {
+        //         if (id == "uname")
+        //          {
+        //         err.innerHTML = "enter uname"
+        //          }
                 
-                else
-                 {
-                    err1.innerHTML = "enter email id"
-                 }
-            }
+        //         else
+        //          {
+        //             err1.innerHTML = "enter email id"
+        //          }
+        //     }
                 
 
-        function blur1(id)
+        // function blur1(id)
+        //     {
+        //         if (id == "uname")
+        //         var pattern = /^( [A-Z]{1,1} )+( [a-z]{3,10} )$/
+        //         var u = document.getElementById("uname").value;
+        //             if(u.match(pattern))
+        //             {
+        //                 err.innerHTML = "<img src ='C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150704.png'>";
+        //             }
+        //         else
+        //         {
+        //             err.innerHTML="<img src = 'C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150749.png'">;
+        //             f1.uname.value=""
+        //             f1.uname.focus()
+                   
+        //         }
+        //     }    
+
+        function fun()
+        {
             {
                 if (id == "uname")
                 var pattern = /^( [A-Z]{1,1} )+( [a-z]{3,10} )$/
                 var u = document.getElementById("uname").value;
                     if(u.match(pattern))
                     {
-                        err.innerHTML = "<img src ='C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150704.png'>";
+                     err.innerHTML = "<img src ='C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150704.png'>";
                     }
-                else
-                {
-                    err.innerHTML="<img src = 'C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150749.png'">;
-                    f1.uname.value=""
-                    f1.uname.focus()
-                   
-                }
+                    else
+                    {
+                     err.innerHTML="<img src = 'C:\Users\rautm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-22 150749.png'">;
+                     f1.uname.value=""
+                     f1.uname.focus()
+                   }
+                else if(id=="email")
+                var pattern = /(^[a-z]{1,1}) + ([]{})$)/
+
+
             }    
+        }
 
     </script>
 </head>
 <body>
     
 
-    <form id="f1">
+    <form id="f1" onsubmit="fun()" action="succes.html">
         <table>
             <tr> 
                <td>username</td>
@@ -78,6 +92,10 @@
              <tr> 
                 <td>confirm password</td>
                 <td> <input type="password" name="confirm password"></td>
+             </tr>
+
+             <tr>
+                <td> <input type="submit" value="Ragister"></td>
              </tr>
 
         </table>
